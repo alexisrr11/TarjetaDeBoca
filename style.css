@@ -1,0 +1,333 @@
+:root {
+    --color-primary: rgba(226, 193, 2, 0.87);
+    --color-secondary: rgba(17, 32, 65, 0.945);
+    --color-terciario: rgba(238, 203, 3, 0.329);
+    --color-cuarto: rgba(224, 191, 3, 0.589);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+body {
+    background-color: var(--color-secondary);
+    color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+}
+.header {
+    height: 100vh;
+    background-color: rgba(38, 83, 78, 0.459);
+    background-image: linear-gradient(160deg, rgba(3, 128, 201, 0.445) 0%, rgba(93, 71, 114, 0.452) 100%), url(./images/BocaEscudo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    position: relative;
+}
+.portada {
+    text-align: center;
+    width: 100vw;
+}
+.portada-video video {
+    width: 99vw;
+    height: 98vh;
+}
+.presentacion {
+    position: relative;
+    top: 0px;
+    justify-self: center;
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 20px 0;
+    width: 70vw;
+}
+.presentacion h1 {
+    font-size: 100px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    color: var(--color-primary);
+}
+.presentacion p {
+    font-size: 40px;
+}
+.bxs-music {
+    color: var(--color-terciario);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px;
+    border: 3px solid var(--color-terciario);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.664);
+    z-index: 1;
+}
+.bx-chevrons-down {
+    color: var(--color-primary);
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    font-size: 60px;
+    animation: floatAnimation 1.5s infinite ease-in-out;
+}
+.bx-gift {
+    color: var(--color-cuarto);
+}
+.bx-closet {
+    color: var(--color-cuarto);
+}
+.bx-volume-full {
+    color: var(--color-cuarto);
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px); /* Baja 15px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.cuenta-regresiva {
+    text-align: center;
+    padding: 60px;
+}
+.cuenta-regresiva h4 {
+    font-size: 2em;
+    font-weight: 500;
+    padding-bottom: 40px;
+    color: var(--color-primary);
+}
+.fecha {
+    display: flex;
+    justify-content: center;
+}
+.fecha div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.horas, 
+.minutos, 
+.segundos {
+    border-left: 1px solid white;
+}
+.numero {
+    font-size: 70px;
+    color: var(--color-primary);
+}
+.letra {
+    font-size: 30px;
+    font-weight: 100;
+}
+.main {
+    background-color: rgba(99, 33, 69, 0.082);
+}
+.estructura {
+    text-align: center;
+    position: relative;
+    padding: 30px;
+}
+.estructura h4 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--color-primary);
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+.estructura h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    padding: 20px 0;
+}
+.estructura p {
+    padding-bottom: 20px;
+}
+.estructura a {
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--color-primary);
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+.fiesta-content {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 80px 0;
+    border-bottom: 1px solid white;
+}
+.adicionales {
+    padding: 30px 0;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.musica h5, 
+.vestimenta h5,
+.regalos h5 {
+    color: var(--color-primary);
+}
+.musica a,
+.vestimenta a,
+.regalos a {
+    background-color: var(--color-primary);
+}
+.regalos button,
+.vestimenta button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--color-primary);
+    border: none;
+}
+.musica, 
+.vestimenta,
+.regalos {
+    background-color: rgba(240, 248, 255, 0.103);
+    padding: 30px;
+    border-radius: 20px;
+    width: 30vw;
+}
+.musica i, 
+.vestimenta i,
+.regalos i {
+    font-size: 50px;
+}
+.vestimenta p,
+.regalos p {
+    padding-bottom: 60px;
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+    height: 100vh;
+    background-color: rgba(38, 83, 78, 0.459);
+    background-image: linear-gradient(160deg, var(--color-terciario) 0%, rgba(1, 15, 24, 0.986) 100%), url(./images/la-bombonera.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.footer h3 {
+    font-size: 2em;
+    font-weight: 200;
+    color: var(--color-primary);
+}
+.footer h5 {
+    font-weight: 100;
+}
+.footer-a {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 120px;
+}
+.footer-a a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    padding: 30px;
+}
+.footer iframe {
+    width: 50vw;
+    height: 60vh;
+    border-radius: 20px;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s, transform 1.5s;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media screen and (max-width: 991px) {
+    .adicionales {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        padding-top: 70px;
+    }
+    .musica, 
+    .vestimenta,
+    .regalos {
+        width: 70vw;
+    }
+    .musica button, 
+    .vestimenta button,
+    .regalos button {
+        width: auto;
+    }
+    .fiesta-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 0;
+        border-bottom: 1px solid white;
+    }
+    .footer {
+        height: 100%;
+    }
+    .footer h5 {
+        padding-bottom: 15px;
+    }
+    .footer-a {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-right: 0;
+        border-top: 1px solid white;
+    }
+    .footer iframe {
+        width: 80vw;
+        height: 50vh;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cuenta-regresiva {
+        padding: 20px;
+    }
+    .fecha div {
+        padding: 0 20px;
+    }
+    .numero {
+        font-size: 50px;
+    }
+    .letra {
+        font-size: 35px;
+    }
+    .fecha div {
+        padding: 0 15px;
+    }
+    .musica {
+        height: 50vh;
+        width: 95vw;
+        padding: 0px;
+    } 
+    .vestimenta,
+    .regalos {
+        height: auto;
+        width: 95vw;
+        padding: 0;
+    }
+    .regalos {
+        padding-bottom: 40px;
+    }
+    .fiesta-content {
+        border-bottom: none;
+    }
+}
+

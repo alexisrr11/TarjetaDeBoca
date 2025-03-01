@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo-lowercase-magenta.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="portada">
+            <i class='bx bxs-music'><audio id="music" src="images/Cancion boca.unknown"></audio></i>
+            <i class='bx bx-chevrons-down'></i>
+        </div>
+        <section class="presentacion">
+            <h1>Román</h1>
+            <p>Te invito a mis 10 años...<br>El día Lunes, 17 de febrero 2025</p>
+            <h5>De 12 a 17hs</h5>
+        </section>
+    
+    </header>
+
+    <section>
+        <div class="cuenta-regresiva efect hidden">
+            <h4>Falta</h4>
+            <div class="fecha">
+                <div class="dias">
+                    <span class="numero" id="dias">00</span>
+                    <span class="letra">Días</span>
+                </div>
+                <div class="horas">
+                    <span class="numero" id="horas">00</span>
+                    <span class="letra">Hs</span>
+                </div>
+                <div class="minutos">
+                    <span class="numero" id="minutos">00</span>
+                    <span class="letra">Min</span>
+                </div>
+                <div class="segundos">
+                    <span class="numero" id="segundos">00</span>
+                    <span class="letra">Seg</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="estructura efect hidden">
+            <h4>Fiesta</h4>
+            <div class="fiesta-content">
+                <div class="asistencia efect hidden">
+                    <h5>Día</h5>
+                    <p>Lunes, 17 de febrero - 12hs</p>
+                    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mi+Evento+Especial&dates=20260217T210000-0300/20260218T050000-0300&details=No+te+lo+pierdas&location=Mi+Ubicación" target="_blank">Agendar</a>
+                </div>
+                <div class="asistencia efect hidden">
+                    <h5>Salón</h5>
+                    <p>La bombonera</p>
+                    <a href="https://api.whatsapp.com/send?phone=541137659081&text=¡Hola,%20quiero%20confirmar%20mi%20asistencia%20al%20evento!">Confirmar asistencia</a>
+                </div>
+                <div class="direccion efect hidden">
+                    <h5>Dirección</h5>
+                    <p> Calle falsa 123, Sprinfield</p>
+                    <a href="#googleMaps">¿Cómo llegar?</a>
+                </div>
+            </div>
+            <div class="adicionales">
+                <div class="musica efect hidden">
+                    <h5>Música</h5>
+                    <i class='bx bx-volume-full'></i>
+                    <p>¿Cuál es la canción que no puede faltar en la fiesta?</p>
+                    <a href="https://api.whatsapp.com/send?phone=541137659081&text=Hola,%20quiero%20sugerir%20una%20canción%20para%20el%20evento.%20Mi%20elección%20es:%20">Sugerir canción</a>
+                </div>
+                <div class="vestimenta efect hidden">
+                    <h5>Vestimenta</h5>
+                    <i class='bx bx-closet'></i>
+                    <p>Orientación para el vestuario</p>
+                    <Button id="ver">Ver más</Button>
+                    <p id="nuevoTxtVer" style="padding-top: 20px;"></p>
+                </div>
+                <div class="regalos efect hidden">
+                    <h5>Regalos</h5>
+                    <i class='bx bx-gift'></i>
+                    <p>Si deseas regalarme algo</p>
+                    <button id="CBU">N° CBU y Alias MP</button>
+                    <p id="N°CBU" style="padding: 0; font-size: 28px;"></p>
+                    <p id="Alias" style="padding: 0;"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h3>Román</h3>
+        <h5>Mis 10 años</h5>
+        <div class="footer-a">
+            <a href="https://api.whatsapp.com/send?phone=541137659081&text=¡Hola,%20quiero%20confirmar%20mi%20asistencia%20al%20evento!">Confirmar asistencia</a>
+            <a href="https://api.whatsapp.com/send?phone=541137659081&text=Hola,%20quiero%20sugerir%20una%20canción%20para%20el%20evento.%20Mi%20elección%20es:%20">Sugerir canción</a>
+            <a href="#">Agendar fiesta</a>
+        </div>
+        <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1637.9210049340493!2d-58.40214459171312!3d-34.80991646971306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd36ee9140f17%3A0xacf64a15a4971dc8!2sRuta%20Provincial%2016%2013180-13318!5e0!3m2!1ses!2sar!4v1739765257076!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
