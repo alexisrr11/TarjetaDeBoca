@@ -37,7 +37,7 @@ body {
 }
 .presentacion {
     position: relative;
-    top: 0px;
+    top: 250px;
     justify-self: center;
     text-align: center;
     border-top: 2px solid #fff;
