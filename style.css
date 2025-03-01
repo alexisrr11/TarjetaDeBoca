@@ -37,7 +37,7 @@ body {
 }
 .presentacion {
     position: relative;
-    top: 0px;
+    top: 15px;
     justify-self: center;
     text-align: center;
     border-top: 2px solid #fff;
@@ -299,6 +299,9 @@ body {
 @media screen and (max-width: 500px) {
     .cuenta-regresiva {
         padding: 20px;
+    }
+    .presentacion p {
+    padding-top: 350px
     }
     .fecha div {
         padding: 0 20px;
