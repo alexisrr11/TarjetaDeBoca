@@ -52,6 +52,7 @@ body {
     color: var(--color-primary);
 }
 .presentacion p {
+    padding-top: 200px;
     font-size: 40px;
 }
 .bxs-music {
@@ -223,7 +224,7 @@ body {
 .footer h3 {
     font-size: 2em;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 .footer h5 {
     font-weight: 100;
@@ -301,7 +302,7 @@ body {
         padding: 20px;
     }
     .presentacion p {
-    padding-top: 350px
+    padding-top: 250px
     }
     .fecha div {
         padding: 0 20px;
@@ -333,4 +334,3 @@ body {
         border-bottom: none;
     }
 }
-
